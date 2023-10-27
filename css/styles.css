@@ -1,0 +1,109 @@
+    /*Títulos do label*/
+    
+    
+    /* definindo a cor de fundo, a cor do texto, o alinhamento do texto e o preenchimento */
+    header {
+    background-color: #333333;
+    color: #7d46fc;
+    text-align: center;
+    padding: 40px 20px;
+    }
+
+    /* define a cor de todos os parágrafos */
+    p { color: rgb(254, 254, 254) }
+
+    label { 
+        color:#7d46fc;
+    }
+
+    /* como os elementos calculam suas dimensões */
+    * {
+    box-sizing: border-box;
+    }
+    
+    /* definem a família de fontes, a altura da linha, a margem e o preenchimento, entre outras coisas. */
+    body {
+    background-image: url(https://thumbs.dreamstime.com/b/schermo-di-programmazione-di-codice-sorgente-di-codifica-53149758.jpg);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 50px;
+    }
+
+
+    /* definindo o tamanho da fonte e a margem inferior */
+    h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    }
+
+    /* tamanho da fonte, a margem superior e a marge inferior */
+    h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    }
+
+    /* cor do texto, tamanho da fonte, margem superior e a margem inferior */
+    h3 {
+        color:#7d46fc;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    }
+
+    /* Define a margem e sua largura  */
+    .container {
+    margin: 20px auto;
+    max-width: 800px;
+    }
+
+    /* define a cor de fundo a distancia da borda e o sombreado */
+    .card {
+    background-color: #252945;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.224);
+    margin-bottom: 20px;
+    padding: 20px;
+    }
+
+    /* definindo uma borda inferior, margem inferior e preenchimento */
+    .card-header {
+    border-bottom: 1px solid #000000;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    }
+
+    /*  */
+    .card-header .right {
+    float: right;
+    }
+
+    /*  */
+    .profile-image {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 170px;
+    height: 160px;
+    background-image: url("data:image/png;base64,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");
+    background-size: cover;
+    background-position: center;
+    }
+
+    /* tamanha e posicionamento da imagem */
+    img{
+        height: 150px;
+        width: 150px; 
+    }
+
+    /* Define os estilos do formulário */
+    input {
+        margin: 1%;
+        padding: 10px;
+        border:0; 
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        border-radius:10px;
+        width: 25%;
+    }
+
